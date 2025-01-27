@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mill.plainopen.com/sitemap.xml

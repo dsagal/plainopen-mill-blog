@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://mill.plainopen.com/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://mill.plainopen.com/</loc>
+</url>
+<url>
+<loc>https://mill.plainopen.com/why-sorting-is-harder-than-it-seems.html</loc>
+<lastmod>2025-01-27T16:52:27-05:00</lastmod>
+<image:image>
+<image:loc>https://mill.plainopen.com/media/posts/1/Sorting-Harder-Than-It-Seems-1.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://mill.plainopen.com/media/posts/1/harry-potter-imelda-staunton-2.gif</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+</urlset>
