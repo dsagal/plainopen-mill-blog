@@ -145,13 +145,13 @@ h6 {
 
 h1,
 .h1 {
-  font-size: clamp(1.5710900065rem, 1.5710900065rem + 1.424540906 * (100vw - 20rem) / 70, 2.9956309125rem);
+  font-size: clamp(1.5710900065rem, 1.5710900065rem + 0.974075804 * (100vw - 20rem) / 70, 2.545165810rem);
   font-family: var(--heading-font);
 }
 
 h2,
 .h2 {
-  font-size: clamp(1.3808408252rem, 1.3808408252rem + 0.9332127447 * (100vw - 20rem) / 70, 2.3140535699rem);
+  font-size: clamp(1.3808408252rem, 1.3808408252rem + 0.690420412 * (100vw - 20rem) / 70, 2.071261237rem);
 }
 
 h3,
@@ -1864,20 +1864,24 @@ textarea {
   border: 1px solid var(--light);
   border-left-width: 2px;
   font-size: 0.9374999997rem;
-  padding: calc(var(--baseline) * 6);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   position: relative;
+  border-radius: 4px;
+  border-color: var(--msg-color);
+  background-color: color-mix(in srgb, var(--msg-color) 20%, transparent);
 }
 .msg--highlight {
-  border-left-color: var(--highlight-color);
+  --msg-color: var(--highlight-color);
 }
 .msg--info {
-  border-left-color: var(--info-color);
+  --msg-color: var(--info-color);
 }
 .msg--success {
-  border-left-color: var(--success-color);
+  --msg-color: var(--success-color);
 }
 .msg--warning {
-  border-left-color: var(--warning-color);
+  --msg-color: var(--warning-color);
 }
 
 .ordered-list {
