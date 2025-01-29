@@ -3,7 +3,7 @@
     <title>The Mill</title>
     <link href="https://mill.plainopen.com/feed.xml" rel="self" />
     <link href="https://mill.plainopen.com" />
-    <updated>2025-01-28T18:01:35-05:00</updated>
+    <updated>2025-01-29T11:38:09-05:00</updated>
     <author>
         <name>Dmitry Sagalovskiy</name>
     </author>
@@ -37,7 +37,7 @@
 </header>
 <p>This story is about sorting arrays. I am telling it because sorting continues to surprise me with delightful bugs. Frustrating too, but also delightful.</p>
 <p>First, some context. I’ve been working for years on a spreadsheet-database tool called <a href="https://www.getgrist.com/">Grist</a>. Naturally, it lets users sort data. There are some complications, such as letting users sort by multiple columns. Also, a column may contain different types of values: for instance, mostly numbers but with some cells that are empty or that contain a string like “N/A” or “TBD”.</p>
-<p>Normally, sorting happens in Javascript, on data that’s already in the browser. So this post is mainly about sorting in Javascript, although the most important points are not language-specific.</p>
+<p>Normally, sorting happens in Javascript, on data that’s already in the browser. So this post is mainly about sorting in Javascript, although the most important points are not language-specific <sup><a href="#fn4">(4)</a></sup>.</p>
 <h3 id="h-default-javascript-sort">Default JavaScript Sort</h3>
 <p>We don’t need a complex example to start scratching our heads:</p>
 <pre class="language-javascript"><code>[10, 2, 'x'].sort() // -&gt; produces [ 10, 2, 'x' ]</code></pre>
@@ -136,7 +136,7 @@ function nativeCompare(a, b) {
 <p id="fn1" class="footnote">(1) There are several equivalent ways to define a sort order: C++ <a href="https://cplusplus.com/reference/algorithm/sort/" target="_blank" rel="noreferrer noopener">standard library sort</a> favors a function like “less than” (which return true or false), while Javascript and Python favor “comparator” (which returns negative, positive, or 0 to indicate “less-than”, “greater-than”, or “equivalent”).</p>
 <p id="fn2" class="footnote">(2) I’ll link to Wikipedia article <a href="https://en.wikipedia.org/wiki/Weak_ordering#Strict_weak_orderings" target="_blank" rel="noreferrer noopener">https://en.wikipedia.org/wiki/Weak_ordering#Strict_weak_orderings</a> but it looks painful to read even for an enthusiastic theoretical math major.</p>
 <p id="fn3" class="footnote">(3) The value in understanding algorithms is similar to the value in understanding the Pythagorean Theorem (and why it’s true), or understanding why we have seasons on this Earth. Not necessary, but satisfying.</p>
-<p class="footnote">(4) Some reactions to this post assumed Javascript is at fault. For string-number conversions, it is, but for all the sorting points, it's not. You'll get the same problems in any language if using an inconsistent comparator, for example when sorting an array of numbers that include NaNs. For example, in Python3, <code>sorted([10, math.nan, 2])</code>  produces <code>[10, nan, 2]</code>). In C++, <code>double arr[] = {5, NAN, 2, 10}; std::sort(arr, arr + 4);</code> produces <code>{2, nan, 10, 5}</code>.</p>
+<p id="fn4" class="footnote">(4) Some reactions to this post assumed Javascript is at fault. For string-number conversions, it is, but for all the sorting points, it's not. You'll get the same problems in any language if using an inconsistent comparator, for example when sorting an array of numbers that include NaNs. For example, in Python3, <code>sorted([10, math.nan, 2])</code>  produces <code>[10, nan, 2]</code>). In C++, <code>double arr[] = {5, NAN, 2, 10}; std::sort(arr, arr + 4);</code> produces <code>{2, nan, 10, 5}</code>.</p>
             ]]>
         </content>
     </entry>
