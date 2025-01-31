@@ -3,7 +3,7 @@
     <title>The Mill</title>
     <link href="https://mill.plainopen.com/feed.xml" rel="self" />
     <link href="https://mill.plainopen.com" />
-    <updated>2025-01-30T22:44:13-05:00</updated>
+    <updated>2025-01-30T23:00:05-05:00</updated>
     <author>
         <name>Dmitry Sagalovskiy</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://mill.plainopen.com/how-we-share-secrets-at-a-fully-remote-startup.html"/>
         <id>https://mill.plainopen.com/how-we-share-secrets-at-a-fully-remote-startup.html</id>
+            <category term="startups"/>
             <category term="security"/>
             <category term="javascript"/>
             <category term="cryptography"/>
