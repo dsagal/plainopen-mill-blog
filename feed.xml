@@ -3,7 +3,7 @@
     <title>The Mill</title>
     <link href="https://mill.plainopen.com/feed.xml" rel="self" />
     <link href="https://mill.plainopen.com" />
-    <updated>2025-01-30T23:00:05-05:00</updated>
+    <updated>2025-02-02T00:07:50-05:00</updated>
     <author>
         <name>Dmitry Sagalovskiy</name>
     </author>
@@ -88,7 +88,7 @@ We just have to pick the parameters (<code>padding</code>), and encode the resul
 <figcaption ><span style="color: #34495e;">Sisyphus “rolling his own”.</span> <span style="color: #7e8c8d;">(Image source: <a href="https://commons.wikimedia.org/wiki/File:Sisyphus_-_Le_Roman_de_la_Rose.jpeg" target="_blank" rel="noreferrer noopener" style="color: #7e8c8d;">Wikimedia Commons</a>)</span></figcaption>
 </figure>
 <h4>Did we roll our own security?</h4>
-<p>No, not really. Our solution uses and trusts a lot of cryptography code from good sources: Node.js, its <code>crypto</code> module, and the <a href="https://www.openssl.org/">OpenSSL</a> library it’s based on. These are respected, well-maintained, commonly-used open-source tools, which get plenty of attention from security researchers.</p>
+<p>Not entirely. Our solution uses and trusts a lot of cryptography code from good sources: Node.js, its <code>crypto</code> module, and the <a href="https://www.openssl.org/">OpenSSL</a> library it’s based on. These are respected, well-maintained, commonly-used open-source tools, which get plenty of attention from security researchers.</p>
 <p>The code we did write, which makes a number of choices about <em>how</em> this cryptography is used, is still sensitive security code. That’s risky. The main protection here is that it’s so small that any software engineer can read and understand it. To me what matters is that <em>I</em> can read and understand it.</p>
 <p>I find this an interesting compromise. It feels as secure as I can imagine any software to be, and it allows Grist Labs to share technical secrets remotely. For non-technical secrets (like next month’s book club selection), Slack works fine. For now…</p>
 <hr>
